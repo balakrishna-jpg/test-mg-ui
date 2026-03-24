@@ -132,7 +132,9 @@
     "interSecondYearPoliticalScieceOrCivics": "SUBJECT-10",
     "interSecondYearPoliticalScieceOrCivicsGrade": "SUBJECT-10-GRADE"
   },
-  "assets": { "directory": "./app/assets", "binding": "ASSETS" }
+  "assets": { 
+    "directory": "./app/assets", "binding": "STATIC_ASSETS"
+  }
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
