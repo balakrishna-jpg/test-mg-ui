@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime-0DLF9kdB.js";import{M as t}from"./managePublicGrievance-Dtmmz9EM.js";import{b as i}from"./index-CXkGJJD_.js";import"./GrievanceService-BR2nTRvM.js";import"./axios-B4dta-LS.js";function u(){const{orgId:r}=i();return o.jsx(t,{orgId:r})}export{u as default};
