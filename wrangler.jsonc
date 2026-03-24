@@ -1,0 +1,171 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aadhan-results",
+  "compatibility_date": "2025-04-10",
+  "pages_build_output_dir": "./build/client",
+  "observability": {
+    "enabled": true
+  },
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+
+    //10th class 
+    "name": "NAME",
+    "hallticketNumber": "ROLLNO",
+
+    "result": "RESULT",
+    // "totalMarks": "G_TOT",
+
+    "firstLanguages10Marks": "L1_MRK",
+    "firstLanguageResult": "L1_RSLT",
+    "lone":"L1_GRADE",
+
+    "secondLanguageMarks": "L2_MRK",
+    "secondLanguageResult": "L2_RSLT",
+    "l2Grade":"L2_GRADE",
+
+
+    "thirdLanguageMarks": "L3_MRK",
+    "thirdLanguageResult": "L3_RSLT",
+    "l3Grade":"L3_GRADE",
+
+    "mathematicsMarks": "MAT_MRK",
+    "mathematicsResult": "MAT_RSLT",
+    "matgrade":"MAT_GRADE",
+
+    "scienceMarks": "SCI_MRK",
+    "scienceResult": "SCI_RSLT",
+    "scigrade": "SCI_GRADE",
+
+    "socialMarks": "SOC_MRK",
+    "socialResult": "SOC_RSLT",
+    "socgrade": "SOC_GRADE",
+
+    //Inter Details
+    "interStudentname": "NAME",
+    "interhalltickerNumber": "ROLLNO",
+    "interGrade": "GRADE",
+
+    "interTotal": "TOTAL",
+
+    // Inter First year
+    "interFirstYearEnglish": "SUBJECT-1",
+    "interFirstYearEnglishGrade": "SUBJECT-1-GRADE",
+
+    "interFirstYearTeluguOrSanskritOrHindiOrUrdu": "SUBJECT-2",
+    "interFirstYearTeluguOrSanskritOrHindiOrUrduGrade": "SUBJECT-2-GRADE",
+
+    //Science students
+
+    "interFirstYearMathsA": "SUBJECT-3",
+    "interFirstYearMathsGradeA": "SUBJECT-3-GRADE",
+
+    "interFirstYearMathsB": "SUBJECT-4",
+    "interFirstYearMathsGradeB": "SUBJECT-4-GRADE",
+
+    "interFirstYearBotany": "SUBJECT-3",
+    "interFirstYearBotanyGrade": "SUBJECT-3-GRADE",
+
+    "interFirstYearZoology": "SUBJECT-4",
+    "interFirstYearZoologyGrade": "SUBJECT-4-GRADE",
+
+    "interFirstYearPhysics": "SUBJECT-5",
+    "interFirstYearPhysicsGrade": "SUBJECT-5-GRADE",
+
+    "interFirstYearChemistry": "SUBJECT-6",
+    "interFirstYearChemistryGrade": "SUBJECT-6-GRADE",
+
+
+    // Arts students
+    "interFirstYearEconomics": "SUBJECT-3",
+    "interFirstYearEconomicGrade": "SUBJECT-3-GRADE",
+
+    "interFirstYearCommerce": "SUBJECT-4",
+    "interFirstYearCommerceGrade": "SUBJECT-4-GRADE",
+
+    "interFirstYearPoliticalScieceOrCivics": "SUBJECT-5",
+    "interFirstYearPoliticalScieceOrCivicsGrades": "SUBJECT-5-GRADE",
+
+    //Inter Second Year
+
+    "interSecondYearEnglish": "SUBJECT-6",
+    "interSecondYearEnglishGrade": "SUBJECT-6-GRADE",
+
+    "interSecondYearTeluguOrSanskritOrHindiOrUrdu": "SUBJECT-7",
+    "interSecondYearTeluguGradeOrSanskritOrHindiOrUrdu": "SUBJECT-7-GRADE",
+
+// Science Students
+    "interSecondYearMathsA": "SUBJECT-9",
+    "interSecondYearMathsGradeA": "SUBJECT-9-GRADE",
+
+    "interSecondYearMathsB": "SUBJECT-10",
+    "interSecondYearMathsGradeB": "SUBJECT-10-GRADE",
+
+
+
+    "interSecondYearBotany": "SUBJECT-9",
+    "interSecondYearBotanyGrade": "SUBJECT-9-GRADE",
+
+    "interSecondYearZoology": "SUBJECT-10",
+    "interSecondYearZoologyGrade": "SUBJECT-10-GRADE",
+
+
+
+    "interSecondYearPhysics": "SUBJECT-11",
+    "interSecondYearPhysicsGrade": "SUBJECT-11-GRADE",
+
+    "interSecondYearChemistry": "SUBJECT-12",
+    "interSecondYearChemistryGrade": "SUBJECT-12-GRADE",
+
+   // Arts students
+
+    "interSecondYearEconomics": "SUBJECT-8",
+    "interSecondYearEconomicGrade": "SUBJECT-8-GRADE",
+
+    "interSecondYearCommerce": "SUBJECT-9",
+    "interSecondYearCommerceGrade": "SUBJECT-9-GRADE",
+
+    "interSecondYearPoliticalScieceOrCivics": "SUBJECT-10",
+    "interSecondYearPoliticalScieceOrCivicsGrade": "SUBJECT-10-GRADE"
+
+   
+
+    
+
+   
+  }
+  /**
+   * Smart Placement
+   * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+   */
+  // "placement": { "mode": "smart" },
+  /**
+   * Bindings
+   * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
+   * databases, object storage, AI inference, real-time communication and more.
+   * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+   */
+  /**
+   * Environment Variables
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+   */
+  // "vars": { "MY_VARIABLE": "production_value" },
+  /**
+   * Note: Use secrets to store sensitive data.
+   * https://developers.cloudflare.com/workers/configuration/secrets/
+   */
+  /**
+   * Static Assets
+   * https://developers.cloudflare.com/workers/static-assets/binding/
+   */
+  // "assets": { "directory": "./public/", "binding": "ASSETS" },
+  /**
+   * Service Bindings (communicate between multiple Workers)
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
+   */
+  // "services": [{ "binding": "MY_SERVICE", "service": "my-service" }]
+}
